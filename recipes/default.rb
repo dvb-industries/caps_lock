@@ -7,7 +7,7 @@ cookbook_file "~/.xmodmap" do
 end
 
 cookbook_file "~/.xprofile" do
-  source ".profile"
+  source ".xprofile"
   path "/home/#{node[:caps_lock][:user]}/.xprofile"
   user node[:caps_lock][:user]
   group node[:caps_lock][:user]
